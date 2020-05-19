@@ -11,6 +11,5 @@ class SearchController < ApplicationController
     json = JSON.parse(response.body, symbolize_names: true)
 
     @members = json
-    require "pry"; binding.pry
   end
 end
